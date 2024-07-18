@@ -44,3 +44,8 @@ models:
       intermediate:
         +materialized: view
         +schema: intermediate
+    
+    staging:
+      +schema: staging
+      erp:
+        +materialized: view

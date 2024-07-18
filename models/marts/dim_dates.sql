@@ -1,10 +1,10 @@
 with recursive 
     calendar_dates as (
-        select datefromparts(2011, 1, 1) as calendar_date
+        select datefromparts(1990, 1, 1) as calendar_date
         union all
         select dateadd(day, 1, calendar_date)
         from calendar_dates
-        where calendar_date < '2015-01-01'
+        where calendar_date < '2035-01-01'
     )
 select
     calendar_date as "DATE"
